@@ -9,7 +9,19 @@ ETL pipeline pulling **NFL player stats** from RapidAPI (Tank01) into SQLite.
 
 ## Setup
 ```bash
+## Windows (Command Prompt)
 set RAPIDAPI_KEY = <RAPIDAPI_KEY>
 set RAPIDAPI_HOST = <RAPIDAPI_HOST>
 set DB_PATH = nfl.db
+
+## Windows (Powershell)
+$env:RAPIDAPI_KEY = <RAPIDAPI_KEY>
+$env:RAPIDAPI_HOST = <RAPIDAPI_HOST>
+$env:DB_PATH = nfl.db
+
+## Linux/MacOS
+export RAPIDAPI_KEY = <RAPIDAPI_KEY>
+export RAPIDAPI_HOST = <RAPIDAPI_HOST>
+export DB_PATH = nfl.db
+
 python etl.py
